@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task7 {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String str = "программист";
         System.out.println("Enter numbers of developers");
         int x = scanner.nextInt();
@@ -12,7 +12,6 @@ public class Task7 {
             System.out.println(x + " " + str + "ов");
         else {
             switch (x % 10) {
-
                 case 2, -2:
                 case 3, -3:
                 case 4, -4:

@@ -28,8 +28,8 @@ public class Task22 {
         }
 
         //Start
-        for (int i=1,j=0;i<size;i++,j++) {
-            if (j % 2 != 0 )
+        for (int i = 1, j = 0; i < size; i++, j++) {
+            if (j % 2 != 0)
                 System.out.print(matrix[i][j] + " ");
         }
     }

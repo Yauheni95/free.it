@@ -12,10 +12,11 @@ public class Task6 {
             array[index] = rand.nextInt(10);
             index++;
         }
+
         for (int a : array) {
             System.out.print(a+" ");
-
         }
+
         index=1;
         System.out.println();
         while (index<array.length){
@@ -26,10 +27,8 @@ public class Task6 {
             index++;
         }
 
-
         if (index==array.length)
             System.out.println("The array is in ascending order");
-
 
     }
 }

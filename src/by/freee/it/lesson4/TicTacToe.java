@@ -6,7 +6,7 @@ public class TicTacToe {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[][] field = {{"1", "2", "3"}, {"4", "5", "6"}, {"7", "8", "9"}};
-        int move ;
+        int move;
         int count = 0;
         String box = "";
         for (int i = 0; i < 3; i++) {
@@ -17,7 +17,7 @@ public class TicTacToe {
         }
 
         Outer:
-        while (count<8) {
+        while (count < 8) {
             count++;
 
             if (count % 2 != 0) {
@@ -27,12 +27,23 @@ public class TicTacToe {
                 box = "O";
                 System.out.println("Second player's turn. Point out  a number of the field, please.");
             }
+
             while (true) {
                 move = scanner.nextInt();
-                if (move > 9 || move < 1)
+                int index = 0;
+
+                for (int i = 0; i < field.length; i++) {
+                    for (int j = 0; j < field.length; j++) {
+                        if (field[i][j].equals(Integer.toString(move))) {
+                            index++;
+                        }
+                    }
+                }
+                if (move > 9 || move < 1 || index == 0)
                     System.out.println("Wrong field, try again");
-                else break ;
+                else break;
             }
+
 
             switch (move) {
                 case 1:
@@ -74,26 +85,23 @@ public class TicTacToe {
             }
 
             for (int i = 0; i < 3; i++) {
-                for (int j = 0, b = 0, a = 0, c = 0,d=0; j < 3; j++) {
+                for (int j = 0, b = 0, a = 0, c = 0, d = 0; j < 3; j++) {
                     if (field[i][j].equals(box))
                         a++;
                     if (field[j][i].equals(box))
                         b++;
                     if (field[j][j].equals(box))
                         c++;
-                    if (field[j][2-j].equals(box))
+                    if (field[j][2 - j].equals(box))
                         d++;
-                    if (a == 3 || b == 3 || c == 3||d==3)
+                    if (a == 3 || b == 3 || c == 3 || d == 3)
                         break Outer;
                 }
-
             }
-
-
         }
 
         System.out.println("Game over");
-        if (count==8)
+        if (count == 8)
             System.out.println("The game ended in a draw");
         else {
             if (box.equals("X"))

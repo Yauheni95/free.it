@@ -19,8 +19,7 @@ public class Task9 {
             array[index] = rand.nextInt(15);
             index++;
         }
-        for (int a : array
-        ) {
+        for (int a : array) {
             System.out.print(a + " ");
         }
         System.out.println();
@@ -29,9 +28,11 @@ public class Task9 {
         int summ2 = 0;
         while (index < array.length / 2) {
             summ1 += array[index];
-            summ2 += array[array.length / 2];
+            summ2 += array[array.length / 2 + index];
             index++;
         }
+        System.out.println("Sum of the first part of the array = " + summ1 + "\n" +
+                "Sum of the second part of the array = " + summ2);
         if (summ1 > summ2)
             System.out.println("First part of the array greater than second part");
         if (summ1 < summ2)

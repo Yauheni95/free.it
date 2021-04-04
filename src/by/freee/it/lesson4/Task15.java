@@ -21,16 +21,18 @@ public class Task15 {
             array[index] = rand.nextInt(50);
             index++;
         }
-        index=1;
-        while (index<array.length){
-            if (index%2!=0)
-                array[index]=0;
-            index++;
 
+        index = 1;
+
+        while (index < array.length) {
+            if (index % 2 != 0)
+                array[index] = 0;
+            index++;
         }
-        for (int a:array
-             ) {
-            System.out.print(a+" ");
+
+        for (int a : array) {
+            System.out.print(a + " ");
         }
+
     }
 }

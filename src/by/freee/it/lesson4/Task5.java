@@ -18,30 +18,27 @@ public class Task5 {
             summ2 += array2[index];
             index++;
         }
-        for (int a : array1
-        ) {
+        for (int a : array1){
             System.out.print(a + " ");
         }
 
         System.out.println();
 
-        for (int a : array2
-        ) {
+        for (int a : array2){
             System.out.print(a + " ");
         }
         System.out.println();
+        int arithmeticMean1=summ1 / array1.length;
+        int arithmeticMean2=summ2 / array2.length;
 
-        if (summ1/array1.length==summ2/array2.length)
+        if (arithmeticMean1 == arithmeticMean2)
             System.out.println("The arithmetic mean of the array elements are equal");
-        if (summ1/array1.length>summ2/array2.length)
+        if (arithmeticMean1 > arithmeticMean2)
             System.out.println("The arithmetic mean of the elements of the first array" +
                     " is greater than the arithmetic mean of the elements of the second array");
-        if (summ1/array1.length<summ2/array2.length)
+        if (arithmeticMean1 < arithmeticMean2)
             System.out.println("The arithmetic mean of the elements of the second array" +
                     " is greater than the arithmetic mean of the elements of the first array");
-
-
-
 
 
     }

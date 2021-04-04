@@ -7,12 +7,12 @@ public class Task3 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number");
         int a = scanner.nextInt();
-        if (a>0)
+        if (a > 0)
             a++;
-        if (a<0)
-            a-=2;
-        if (a==0)
-            a=10;
+        if (a < 0)
+            a -= 2;
+        if (a == 0)
+            a = 10;
         System.out.println(a);
     }
 }

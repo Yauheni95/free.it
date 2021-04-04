@@ -7,18 +7,19 @@ public class Task11FromMetodichka {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число");
         int a = scanner.nextInt();
-        int index=2;
-        while (index<a){
-           if(a%index!=0){
-               index++;}
-         else {
-               System.out.println("Это число не является простым");
-               break;
-
-           }
+        int index = 2;
+        while (index < a) {
+            if (a % index != 0) {
+                index++;
+            } else {
+                System.out.println("Это число не является простым");
+                break;
+            }
         }
-        if (index==a){
+        if (index == a) {
             System.out.println("Это простое число");
         }
+
+
     }
 }

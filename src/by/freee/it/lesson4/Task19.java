@@ -16,24 +16,22 @@ public class Task19 {
         int[] array = new int[number];
         Random rand = new Random();
         int index = 0;
-
-
         while (index < array.length) {
             array[index] = rand.nextInt(50);
             index++;
         }
-       int min=array[0];
-        index=0;
-        while (index<array.length){
-            if(array[index]<min&&index%2==0&&array[index]!=0)
-                min=array[index];
+        int min = array[0];
+        index = 0;
+        while (index < array.length) {
+            if (array[index] < min && index % 2 == 0 && array[index] != 0)
+                min = array[index];
             index++;
         }
-        for (int a: array
-             ) {
-            System.out.print(a+" ");
+        for (int a : array) {
+            System.out.print(a + " ");
         }
+
         System.out.println();
-        System.out.println("Minimal value with odd index is "+min);
+        System.out.println("Minimal value with odd index is " + min);
     }
 }
