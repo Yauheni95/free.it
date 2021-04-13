@@ -11,10 +11,10 @@ etc.). Реализовать метод get(int index), который возв
         MyClass<String> myClass= new MyClass<>(array);
         System.out.println(myClass.get(2));
         int [] array2 = {24,75,32,18,222};
-        MyClass myClass2=new MyClass(array2);
+        MyClass <Integer> myClass2=new MyClass <>(array2);
         System.out.println(myClass2.get(3));
         double [] array3 = {23.15,65.12,38.00};
-        MyClass myClass3=new MyClass(array3);
+        MyClass <Double> myClass3=new MyClass<>(array3);
         System.out.println(myClass3.get(1));
 
 
