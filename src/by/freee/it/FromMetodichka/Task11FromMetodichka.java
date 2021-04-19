@@ -19,7 +19,5 @@ public class Task11FromMetodichka {
         if (index == a) {
             System.out.println("Это простое число");
         }
-
-
     }
 }

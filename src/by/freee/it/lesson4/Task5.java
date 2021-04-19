@@ -39,7 +39,5 @@ public class Task5 {
         if (arithmeticMean1 < arithmeticMean2)
             System.out.println("The arithmetic mean of the elements of the second array" +
                     " is greater than the arithmetic mean of the elements of the first array");
-
-
     }
 }

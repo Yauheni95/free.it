@@ -18,9 +18,6 @@ public class Task12FromMetodichka {
             }
             number++;
         }
-
         System.out.println(summ);
-
-
     }
 }

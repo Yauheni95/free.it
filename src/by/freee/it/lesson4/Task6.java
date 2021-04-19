@@ -29,6 +29,5 @@ public class Task6 {
 
         if (index==array.length)
             System.out.println("The array is in ascending order");
-
     }
 }

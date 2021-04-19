@@ -23,7 +23,7 @@ public class Task19 {
         int min = array[0];
         index = 0;
         while (index < array.length) {
-            if (array[index] < min && index % 2 == 0 && array[index] != 0)
+            if (array[index] != 0 && array[index] < min && index % 2 == 0)
                 min = array[index];
             index++;
         }

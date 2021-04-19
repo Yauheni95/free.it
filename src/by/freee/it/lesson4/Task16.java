@@ -27,12 +27,13 @@ public class Task16 {
             System.out.print(a + " ");
         }
         System.out.println();
-        Outer:
-        while (index < array.length) {
+        boolean finished = false;
+        while (index < array.length&&!finished) {
             for (int i = index + 1; i < array.length; i++) {
                 if (array[index] == array[i]) {
                     System.out.println("The array contains the same elements");
-                    break Outer;
+                    finished=true;
+                    break;
                 }
             }
             index++;

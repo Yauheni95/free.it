@@ -20,7 +20,5 @@ public class Task3 {
         }
         System.out.println();
         System.out.println("Quantity of even numbers is " + index);
-
-
     }
 }
