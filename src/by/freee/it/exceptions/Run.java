@@ -23,9 +23,5 @@ public class Run {
         } catch (MyException e) {
             System.out.println(e.getMessage());
         }
-
-
     }
-
-
 }
