@@ -16,13 +16,11 @@ public class Task31FromMetodichka {
         ListIterator<Integer> listIterator = grades.listIterator();
         grades.forEach(a -> System.out.print(a+" "));
         System.out.println();
-        for (Integer a : grades) {
-            if (listIterator.hasNext()) {
+
+            while (listIterator.hasNext()) {
                 if (maxGrade < listIterator.next())
                     maxGrade = listIterator.previous();
             }
-        }
         System.out.println(maxGrade);
-
     }
 }

@@ -40,8 +40,8 @@ public class Task32FromMetodichka {
             words[i]=words[i].toLowerCase();
         }
         Set <String> list = new HashSet<>(Arrays.asList(words));
-        String []words1= list.toArray(new String[0]);
-        int [] counter = new int[list.size()];
+        String[] words1= list.toArray(new String[0]);
+        int[] counter = new int[list.size()];
         for (int i=0;i<words1.length;i++){
             for (int j = 0;j<words.length;j++){
                 if (words1[i].equals(words[j])){
@@ -53,13 +53,9 @@ public class Task32FromMetodichka {
         for (int i =0;i<list.size();i++){
             dictionary.put(words1[i],counter[i]);
         }
-
         dictionary.entrySet().stream()
                 .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
                 .forEach(System.out::println);
-
-
-
     }
 
 }
