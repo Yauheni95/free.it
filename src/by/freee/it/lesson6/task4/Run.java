@@ -5,6 +5,5 @@ public class Run {
         Computer computer = new Computer("Samsung", 1300);
         computer.setSystemParameters("Windows",1.9,8);
         System.out.println(computer.toString());
-
     }
 }

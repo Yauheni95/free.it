@@ -8,35 +8,35 @@ public class Catalog {
     Создать класс Catalog с внутренним классом, с помощью объектов которого можно
     хранить информацию об истории выдач книги читателям.
      */
-    private final LendInfo[] LENDS;
+    private final LendInfo[] lends;
     private static int id;
 
     public Catalog(int size) {
-        this.LENDS = new LendInfo[size];
+        this.lends = new LendInfo[size];
     }
 
     public boolean writeDownToCatalog(String name, String surname, String title) {
-        if (id == LENDS.length - 1)
+        if (id == lends.length - 1)
             return false;
         else {
-            this.LENDS[id] = new LendInfo(id, name, surname, title);
+            this.lends[id] = new LendInfo(id, name, surname, title);
             id++;
             return true;
         }
     }
 
     public void checkById(int id) {
-        if (this.LENDS[id] == null)
+        if (this.lends[id] == null)
             System.out.println("Entry is absent");
         else
-            System.out.println(this.LENDS[id].toString());
+            System.out.println(this.lends[id].toString());
     }
 
     public void checkBySurname(String surname) {
         int index = 0;
-        for (int i = 0; i < LENDS.length && LENDS[i] != null; i++) {
-            if (LENDS[i].surname.equals(surname)) {
-                System.out.println(this.LENDS[i].toString());
+        for (int i = 0; i < lends.length && lends[i] != null; i++) {
+            if (lends[i].surname.equals(surname)) {
+                System.out.println(this.lends[i].toString());
                 index++;
             }
         }
@@ -46,9 +46,9 @@ public class Catalog {
 
     public void checkByName(String name) {
         int index = 0;
-        for (int i = 0; i < LENDS.length && LENDS[i] != null; i++) {
-            if (LENDS[i].name.equals(name)) {
-                System.out.println(this.LENDS[i].toString());
+        for (int i = 0; i < lends.length && lends[i] != null; i++) {
+            if (lends[i].name.equals(name)) {
+                System.out.println(this.lends[i].toString());
                 index++;
             }
         }
@@ -58,9 +58,9 @@ public class Catalog {
 
     public void checkByTitle(String title) {
         int index = 0;
-        for (int i = 0; i < LENDS.length && LENDS[i] != null; i++) {
-            if (LENDS[i].title.equals(title)) {
-                System.out.println(this.LENDS[i].toString());
+        for (int i = 0; i < lends.length && lends[i] != null; i++) {
+            if (lends[i].title.equals(title)) {
+                System.out.println(this.lends[i].toString());
                 index++;
             }
         }
@@ -69,7 +69,7 @@ public class Catalog {
     }
 
     public void handOverBook(int id) {
-        this.LENDS[id].status = true;
+        this.lends[id].status = true;
     }
 
     private class LendInfo {

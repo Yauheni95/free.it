@@ -49,7 +49,6 @@ public class Notepad {
         }
     }
 
-
     private class DiaryEntries {
         private final String[] entries = new String[10];
         private Date date;
@@ -71,9 +70,6 @@ public class Notepad {
         public int getCount() {
             return count;
         }
-
-
-
     }
 
 }

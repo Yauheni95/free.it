@@ -9,6 +9,5 @@ public class Run {
         account.payForPurchase(12);
         System.out.println();
         System.out.println(account.toString());
-
     }
 }

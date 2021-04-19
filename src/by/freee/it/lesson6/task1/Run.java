@@ -12,7 +12,5 @@ public class Run {
         System.out.println();
         book.checkEntriesByPage(25);
         book.writeDownEntry(25,3);
-
-
     }
 }

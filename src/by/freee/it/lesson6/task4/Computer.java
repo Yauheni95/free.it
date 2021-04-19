@@ -82,9 +82,6 @@ public class Computer {
                     ", Processor = " + processor + "GHz"+
                     ", RAM = " + ram + "GB.";
         }
-
         }
-
-
 }
 
