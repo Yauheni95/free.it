@@ -9,17 +9,16 @@ public class Task3 {
         System.out.println("Palindromes: ");
         for (int i = 0, flag = 0; i < words.length; i++) {
             String box = words[i];
-            for (int j = 0, k = box.length() - 1; j < box.length(); j++, k--) {
+            for (int j = 0, k = box.length() - 1; j < box.length()/2; j++, k--) {
                 if (box.charAt(j) != box.charAt(k))
                     break;
                 else
                     flag++;
             }
-            if (flag == box.length()) {
+            if (flag == box.length()/2) {
                 System.out.println(box);
             }
             flag = 0;
         }
-
     }
 }

@@ -32,8 +32,7 @@ public class Task23 {
 
         for (int i = 0, j = 0; i < size; i++, j++) {
             result_1 *= matrix[i][j];
-            result_2 *= matrix[(size - 1) - i][ j];
-
+            result_2 *= matrix[(size - 1) - i][j];
         }
         System.out.println(result_1);
         System.out.println(result_2);
@@ -46,7 +45,6 @@ public class Task23 {
         if (result_1 == result_2)
             System.out.println("the result of multiplying the elements of the side diagonal" +
                     " and the main diagonal is equal");
-
 
     }
 }

@@ -24,18 +24,17 @@ public class Task17 {
             index++;
         }
 
-        index=0;
-        int counter=0;
-        for (int a:array
-        ) {
-            System.out.print(a+" ");
+        index = 0;
+        int counter = 0;
+        for (int a : array) {
+            System.out.print(a + " ");
         }
         System.out.println();
-        while (index<array.length){
-            if(array[index]==value)
+        while (index < array.length) {
+            if (array[index] == value)
                 counter++;
             index++;
         }
-        System.out.println("The specified value appears in the array "+counter+" times.");
+        System.out.println("The specified value appears in the array " + counter + " times.");
     }
 }

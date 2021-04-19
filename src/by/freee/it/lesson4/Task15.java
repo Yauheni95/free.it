@@ -26,7 +26,6 @@ public class Task15 {
             if (index%2!=0)
                 array[index]=0;
             index++;
-
         }
         for (int a:array
              ) {

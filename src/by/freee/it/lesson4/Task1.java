@@ -19,7 +19,4 @@ public class Task1 {
         for (int a : array)
             System.out.println(a);
     }
-
-
-
 }

@@ -18,15 +18,13 @@ public class Task5 {
             summ2 += array2[index];
             index++;
         }
-        for (int a : array1
-        ) {
+        for (int a : array1) {
             System.out.print(a + " ");
         }
 
         System.out.println();
 
-        for (int a : array2
-        ) {
+        for (int a : array2) {
             System.out.print(a + " ");
         }
         System.out.println();
@@ -39,10 +37,5 @@ public class Task5 {
         if (summ1/array1.length<summ2/array2.length)
             System.out.println("The arithmetic mean of the elements of the second array" +
                     " is greater than the arithmetic mean of the elements of the first array");
-
-
-
-
-
     }
 }

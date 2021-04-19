@@ -21,7 +21,5 @@ public class Task6 {
             result += words[i].charAt(words[i].length() - 1);
         }
         System.out.println(result);
-
-
     }
 }

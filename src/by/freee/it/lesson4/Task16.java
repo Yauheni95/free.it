@@ -28,18 +28,17 @@ public class Task16 {
             System.out.print(a+" ");
         }
         System.out.println();
-        Outer:
-        while (index<array.length){
-            for (int i=index+1, j=0;i<array.length;i++) {
+        boolean finished = false;
+        while (index<array.length&&!finished){
+            for (int i=index+1; i<array.length;i++) {
                 if (array[index] == array[i]){
+                    finished=true;
                     System.out.println("The array contains the same elements");
-                break Outer;}
+                break ;}
             }
             index++;
         }
        if (index==array.length)
            System.out.println("All elements are different");
-
     }
-
 }

@@ -29,12 +29,10 @@ public class Task12 {
             }
             index++;
         }
-        for (int a: array
-             ) {
+        for (int a: array) {
             System.out.print(a+" ");
         }
         System.out.println();
         System.out.println("Arithmetic mean of odd-indexed elements is "+(summ/counter));
-
     }
 }

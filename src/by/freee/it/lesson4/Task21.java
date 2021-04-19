@@ -37,7 +37,5 @@ public class Task21 {
         }
         System.out.println();
         System.out.println("sum is " + summ);
-
-
     }
 }

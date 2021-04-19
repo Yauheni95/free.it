@@ -6,7 +6,7 @@ public class TicTacToe {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[][] field = {{"1", "2", "3"}, {"4", "5", "6"}, {"7", "8", "9"}};
-        int move ;
+        int move;
         int count = 0;
         String box = "";
         for (int i = 0; i < 3; i++) {
@@ -17,7 +17,7 @@ public class TicTacToe {
         }
 
         Outer:
-        while (count<8) {
+        while (count < 8) {
             count++;
 
             if (count % 2 != 0) {
@@ -31,7 +31,7 @@ public class TicTacToe {
                 move = scanner.nextInt();
                 if (move > 9 || move < 1)
                     System.out.println("Wrong field, try again");
-                else break ;
+                else break;
             }
 
             switch (move) {
@@ -64,36 +64,32 @@ public class TicTacToe {
                     break;
             }
 
-
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++)
                     System.out.print(field[i][j] + " | ");
                 System.out.println();
                 System.out.println("----------");
-
             }
 
             for (int i = 0; i < 3; i++) {
-                for (int j = 0, b = 0, a = 0, c = 0,d=0; j < 3; j++) {
+                for (int j = 0, b = 0, a = 0, c = 0, d = 0; j < 3; j++) {
                     if (field[i][j].equals(box))
                         a++;
                     if (field[j][i].equals(box))
                         b++;
                     if (field[j][j].equals(box))
                         c++;
-                    if (field[j][2-j].equals(box))
+                    if (field[j][2 - j].equals(box))
                         d++;
-                    if (a == 3 || b == 3 || c == 3||d==3)
+                    if (a == 3 || b == 3 || c == 3 || d == 3)
                         break Outer;
                 }
 
             }
-
-
         }
 
         System.out.println("Game over");
-        if (count==8)
+        if (count == 8)
             System.out.println("The game ended in a draw");
         else {
             if (box.equals("X"))
@@ -101,7 +97,5 @@ public class TicTacToe {
             if (box.equals("O"))
                 System.out.println("Player 2 win");
         }
-
-
     }
 }

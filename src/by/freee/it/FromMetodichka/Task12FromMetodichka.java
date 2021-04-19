@@ -16,11 +16,7 @@ public class Task12FromMetodichka {
                 summ+=number;
                 index++;}
             number++;
-
-
         }
         System.out.println(summ);
-
-
     }
 }
