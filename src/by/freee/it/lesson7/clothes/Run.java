@@ -22,6 +22,5 @@ public class Run {
         three.putOnAll();
         System.out.println();
         three.putOffAll();
-
     }
 }

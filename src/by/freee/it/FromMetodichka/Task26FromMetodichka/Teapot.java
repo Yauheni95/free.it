@@ -6,6 +6,11 @@ public class Teapot extends KitchenAppliances implements Start {
     private String color;
     private double volume;
 
+    public Teapot(String brand, double price, int power, double weight, String color) {
+        super(brand, price, power, weight);
+        this.color = color;
+    }
+
     public String getColor() {
         return color;
     }
@@ -21,12 +26,6 @@ public class Teapot extends KitchenAppliances implements Start {
     public void setVolume(double volume) {
         this.volume = volume;
     }
-
-    public Teapot(String brand, double price, int power, double weight, String color) {
-        super(brand, price, power, weight);
-        this.color = color;
-    }
-
 
     @Override
     public void plugIn() {

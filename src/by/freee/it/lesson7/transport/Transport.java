@@ -1,10 +1,8 @@
 package by.freee.it.lesson7.transport;
 
-
-
 public abstract class Transport {
     private int power;
-    private int max_speed;
+    private int maxSpeed;
     private double weight;
     private String brand;
 
@@ -16,12 +14,12 @@ public abstract class Transport {
         this.power = power;
     }
 
-    public int getMax_speed() {
-        return max_speed;
+    public int getMaxSpeed() {
+        return maxSpeed;
     }
 
-    public void setMax_speed(int max_speed) {
-        this.max_speed = max_speed;
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
     }
 
     public double getWeight() {
@@ -40,13 +38,11 @@ public abstract class Transport {
         this.brand = brand;
     }
 
-    public Transport(int power, int max_speed, double weight, String brand) {
+    public Transport(int power, int maxSpeed, double weight, String brand) {
         this.power = power;
-        this.max_speed = max_speed;
+        this.maxSpeed = maxSpeed;
         this.weight = weight;
         this.brand = brand;
-
-
     }
 
     public double toKilowatt(double horse_power){
@@ -57,7 +53,7 @@ public abstract class Transport {
     public String toString() {
         return
                 "brand: " + brand +
-                ", max speed = " + max_speed + " k/h"+
+                ", max speed = " + maxSpeed + " k/h"+
                 ", weight = " + weight + " kg"+
                 ", power = " + power + " h/p" +" or "+toKilowatt(this.power)+" k/w";
     }

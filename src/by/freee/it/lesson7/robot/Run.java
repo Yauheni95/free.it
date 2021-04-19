@@ -37,7 +37,5 @@ public class Run {
             System.out.println("Самый дорогой робот - terminator, цена = " + terminator.getPrice());
         if (valley.getPrice() == max_price)
             System.out.println("Самый дорогой робот - valley, цена = " + valley.getPrice());
-
-
     }
 }

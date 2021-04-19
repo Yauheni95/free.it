@@ -3,9 +3,9 @@ package by.freee.it.lesson7.cosmodrome;
 public class Run {
     public static void main(String[] args) {
         Cosmodrome cosmodrome = new Cosmodrome();
-        Shuttle shuttle = new Shuttle();
-        SpaceX spaceX = new SpaceX();
-        Soyuz soyuz = new Soyuz();
+        IStart shuttle = new Shuttle();
+        IStart spaceX = new SpaceX();
+        IStart soyuz = new Soyuz();
         cosmodrome.launch(shuttle);
         System.out.println();
         cosmodrome.launch(soyuz);

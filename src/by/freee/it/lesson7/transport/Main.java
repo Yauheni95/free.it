@@ -8,7 +8,6 @@ public class Main {
         transp1.checkPassengersCapacity(19);
         System.out.println();
 
-
         LightLandTransport transp2 = new LightLandTransport(150, 220, 3000, "audi", 4, 10, "sedan", 6);
         System.out.println(transp2.toString());
         transp2.routeInformation(5);
@@ -24,7 +23,5 @@ public class Main {
         System.out.println(transp4.toString());
         transp4.shot();
         transp4.checkEjectionSystem();
-
-
     }
 }

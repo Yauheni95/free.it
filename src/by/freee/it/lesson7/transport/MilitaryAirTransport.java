@@ -1,27 +1,27 @@
 package by.freee.it.lesson7.transport;
 
 public class MilitaryAirTransport extends AirTransport {
-    private boolean ejection_system;
+    private boolean ejectionSystem;
     private int missile;
 
-    public MilitaryAirTransport(int power, int max_speed, double weight, String brand, double wingspan, double min_takeoff_length, boolean ejection_system, int missile) {
+    public MilitaryAirTransport(int power, int max_speed, double weight, String brand, double wingspan, double min_takeoff_length, boolean ejectionSystem, int missile) {
         super(power, max_speed, weight, brand, wingspan, min_takeoff_length);
-        this.ejection_system = ejection_system;
+        this.ejectionSystem = ejectionSystem;
         this.missile = missile;
     }
 
-    public boolean isEjection_system() {
-        return ejection_system;
+    public boolean isEjectionSystem() {
+        return ejectionSystem;
     }
 
-    public void setEjection_system(boolean ejection_system) {
-        this.ejection_system = ejection_system;
+    public void setEjectionSystem(boolean ejectionSystem) {
+        this.ejectionSystem = ejectionSystem;
     }
 
     @Override
     public String toString() {
         String result;
-        if (ejection_system)
+        if (ejectionSystem)
             result = "is present";
         else
             result = "is absent";
@@ -38,7 +38,7 @@ public class MilitaryAirTransport extends AirTransport {
     }
 
     public void checkEjectionSystem() {
-        if (this.ejection_system) System.out.println("The bailout was successful");
+        if (this.ejectionSystem) System.out.println("The bailout was successful");
         else System.out.println("You don't have such a system");
     }
 }

@@ -1,45 +1,45 @@
 package by.freee.it.lesson7.transport;
 
 public class CivilAirTransport extends  AirTransport{
-    private int passengers_number;
-    private boolean business_class;
+    private int passengersNumber;
+    private boolean businessClass;
 
     @Override
     public String toString() {
         String result;
-        if (this.business_class)
+        if (this.businessClass)
             result="is present";
         else
             result="is absent";
         return "Civil Air Transport:\n" + super.toString()+
-                ", passengers number = " + passengers_number +
+                ", passengers number = " + passengersNumber +
                 ", business class " + result ;
     }
 
-    public CivilAirTransport(int power, int max_speed, double weight, String brand, double wingspan, double min_takeoff_length, int passengers_number, boolean business_class) {
+    public CivilAirTransport(int power, int max_speed, double weight, String brand, double wingspan, double min_takeoff_length, int passengers_number, boolean businessClass) {
         super(power, max_speed, weight, brand, wingspan, min_takeoff_length);
-        this.passengers_number=passengers_number;
-        this.business_class=business_class;
+        this.passengersNumber =passengers_number;
+        this.businessClass = businessClass;
     }
 
-    public int getPassengers_number() {
-        return passengers_number;
+    public int getPassengersNumber() {
+        return passengersNumber;
     }
 
-    public void setPassengers_number(int passengers_number) {
-        this.passengers_number = passengers_number;
+    public void setPassengersNumber(int passengersNumber) {
+        this.passengersNumber = passengersNumber;
     }
 
-    public boolean isBusiness_class() {
-        return business_class;
+    public boolean isBusinessClass() {
+        return businessClass;
     }
 
-    public void setBusiness_class(boolean business_class) {
-        this.business_class = business_class;
+    public void setBusinessClass(boolean businessClass) {
+        this.businessClass = businessClass;
     }
 
     public  void checkPassengersCapacity (int passengers){
-        if (passengers<=this.passengers_number)
+        if (passengers<=this.passengersNumber)
             System.out.println("Plane filled up");
         else
             System.out.println("You need a bigger plane");
