@@ -1,8 +1,13 @@
 package by.freee.it.lesson8;
 
+import java.text.DateFormat;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.Month;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Task1 {
@@ -18,10 +23,11 @@ public class Task1 {
             System.out.println("You entered wrong date format");
         else {
             DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            LocalDate ld = LocalDate.parse(date,dateTimeFormatter);
+            LocalDate ld = LocalDate.parse(date, dateTimeFormatter);
             System.out.println(ld.getMonth());
+            DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+            Date date1 = dateFormat.parse(date);
+            System.out.println(Month.of(date1.getDate() + 1));
         }
-
-
     }
 }

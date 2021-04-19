@@ -7,18 +7,14 @@ etc.). Реализовать метод get(int index), который возв
 массива по индексу.
      */
     public static void main(String[] args) {
-        String [] array = {"one","two","three"};
+        String[] array = {"one","two","three"};
         MyClass<String> myClass= new MyClass<>(array);
         System.out.println(myClass.get(2));
-        int [] array2 = {24,75,32,18,222};
-        MyClass <Integer> myClass2=new MyClass <>(array2);
+        Integer[] array2 = {24,75,32,18,222};
+        MyClass <Integer> myClass2=new MyClass<>(array2);
         System.out.println(myClass2.get(3));
-        double [] array3 = {23.15,65.12,38.00};
+        Double[] array3 = {23.15,65.12,38.00};
         MyClass <Double> myClass3=new MyClass<>(array3);
         System.out.println(myClass3.get(1));
-
-
-
-
     }
 }

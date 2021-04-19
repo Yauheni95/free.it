@@ -1,12 +1,16 @@
 package by.freee.it.lesson8;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Task2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         /*
         По введенной дате вывести возраст
          */
@@ -20,11 +24,15 @@ public class Task2 {
             DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
             LocalDate ld = LocalDate.parse(date, dateTimeFormatter);
             LocalDate ld1 = LocalDate.now();
+            DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+            Date date1 = dateFormat.parse(date);
+            Date date2 = new Date();
             if (ld.isAfter(ld1))
                 System.out.println("There can't be a birthday after today");
             else {
                 Period period = ld.until(ld1);
                 System.out.println(period.getYears() + " years old");
+                System.out.println((date2.getYear() - date1.getYear()) - 1 + " years old");
             }
         }
     }
