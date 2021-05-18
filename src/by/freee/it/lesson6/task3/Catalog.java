@@ -8,8 +8,8 @@ public class Catalog {
     Создать класс Catalog с внутренним классом, с помощью объектов которого можно
     хранить информацию об истории выдач книги читателям.
      */
-    private final LendInfo[] lends;
-    private static int id;
+    private LendInfo[] lends;
+    private int id;
 
     public Catalog(int size) {
         this.lends = new LendInfo[size];
@@ -105,6 +105,4 @@ public class Catalog {
                     '}';
         }
     }
-
-
 }

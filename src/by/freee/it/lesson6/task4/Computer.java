@@ -32,8 +32,8 @@ public class Computer {
         this.price = price;
     }
 
-    public void setSystemParameters (String os, double processor, int ram){
-        parameters=new SystemParameters();
+    public void setSystemParameters(String os, double processor, int ram) {
+        parameters = new SystemParameters();
         this.parameters.setOperationSystem(os);
         this.parameters.setProcessor(processor);
         this.parameters.setRam(ram);
@@ -42,14 +42,14 @@ public class Computer {
     @Override
     public String toString() {
         return "Computer " + brand +
-                "\nSystemInfo: " + parameters.toString() ;
+                "\nSystemInfo: " + parameters.toString();
     }
 
 
-    public  class SystemParameters {
-       private String operationSystem;
-       private double processor;
-       private int ram;
+    public class SystemParameters {
+        private String operationSystem;
+        private double processor;
+        private int ram;
 
 
         public String getOperationSystem() {
@@ -78,10 +78,10 @@ public class Computer {
 
         @Override
         public String toString() {
-            return  "Operation System - " + operationSystem +
-                    ", Processor = " + processor + "GHz"+
+            return "Operation System - " + operationSystem +
+                    ", Processor = " + processor + "GHz" +
                     ", RAM = " + ram + "GB.";
         }
-        }
+    }
 }
 
