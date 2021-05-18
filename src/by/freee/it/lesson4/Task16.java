@@ -22,23 +22,25 @@ public class Task16 {
             index++;
         }
 
-        index=0;
-        for (int a:array
-             ) {
-            System.out.print(a+" ");
+        index = 0;
+        for (int a : array) {
+            System.out.print(a + " ");
         }
         System.out.println();
         boolean finished = false;
-        while (index<array.length&&!finished){
-            for (int i=index+1; i<array.length;i++) {
-                if (array[index] == array[i]){
-                    finished=true;
+        while (index < array.length&&!finished) {
+            for (int i = index + 1; i < array.length; i++) {
+                if (array[index] == array[i]) {
                     System.out.println("The array contains the same elements");
-                break ;}
+                    finished=true;
+                    break;
+                }
             }
             index++;
         }
-       if (index==array.length)
-           System.out.println("All elements are different");
+        if (index == array.length)
+            System.out.println("All elements are different");
+
     }
+
 }

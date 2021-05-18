@@ -16,37 +16,35 @@ public class Task20 {
         int[] array = new int[number];
         Random rand = new Random();
         int index = 0;
-        int max=0;
-        int counter=0;
+        int max = 0;
+        int counter = 0;
 
         while (index < array.length) {
             array[index] = rand.nextInt(50);
             index++;
         }
 
-        for (int i=0;i<array.length;i++){
-            if (array[i]>max) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > max) {
                 max = array[i];
-                counter=i;
+                counter = i;
             }
         }
 
-        for (int a:array
-        ) {
-            System.out.print(a+" ");
+        for (int a : array) {
+            System.out.print(a + " ");
         }
 
         System.out.println();
         System.out.println(max);
 
 
-        int swap =array[counter];
-        array[counter]=array[0];
-        array[0]=swap;
+        int swap = array[counter];
+        array[counter] = array[0];
+        array[0] = swap;
 
-        for (int a:array
-        ) {
-            System.out.print(a+" ");
+        for (int a : array) {
+            System.out.print(a + " ");
         }
     }
 }

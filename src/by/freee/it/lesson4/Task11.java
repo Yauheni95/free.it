@@ -27,8 +27,7 @@ public class Task11 {
             }
             index++;
         }
-        for (int a : array
-        ) {
+        for (int a : array) {
             System.out.print(a + " ");
         }
         System.out.println();

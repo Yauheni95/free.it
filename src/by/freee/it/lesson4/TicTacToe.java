@@ -27,12 +27,23 @@ public class TicTacToe {
                 box = "O";
                 System.out.println("Second player's turn. Point out  a number of the field, please.");
             }
+
             while (true) {
                 move = scanner.nextInt();
-                if (move > 9 || move < 1)
+                int index = 0;
+
+                for (int i = 0; i < field.length; i++) {
+                    for (int j = 0; j < field.length; j++) {
+                        if (field[i][j].equals(Integer.toString(move))) {
+                            index++;
+                        }
+                    }
+                }
+                if (move > 9 || move < 1 || index == 0)
                     System.out.println("Wrong field, try again");
                 else break;
             }
+
 
             switch (move) {
                 case 1:
@@ -64,11 +75,13 @@ public class TicTacToe {
                     break;
             }
 
+
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++)
                     System.out.print(field[i][j] + " | ");
                 System.out.println();
                 System.out.println("----------");
+
             }
 
             for (int i = 0; i < 3; i++) {
@@ -84,7 +97,6 @@ public class TicTacToe {
                     if (a == 3 || b == 3 || c == 3 || d == 3)
                         break Outer;
                 }
-
             }
         }
 
@@ -97,5 +109,7 @@ public class TicTacToe {
             if (box.equals("O"))
                 System.out.println("Player 2 win");
         }
+
+
     }
 }

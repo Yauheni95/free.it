@@ -8,13 +8,14 @@ public class Task12FromMetodichka {
         System.out.println("Введите число");
         int n = scanner.nextInt();
         int index = 0;
-        int summ=0;
-        int number=1;
+        int summ = 0;
+        int number = 1;
 
-        while (index<n){
-            if (number%3==0){
-                summ+=number;
-                index++;}
+        while (index < n) {
+            if (number % 3 == 0) {
+                summ += number;
+                index++;
+            }
             number++;
         }
         System.out.println(summ);

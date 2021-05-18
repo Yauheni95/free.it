@@ -16,7 +16,6 @@ public class Task19 {
         int[] array = new int[number];
         Random rand = new Random();
         int index = 0;
-
         while (index < array.length) {
             array[index] = rand.nextInt(50);
             index++;
@@ -31,6 +30,7 @@ public class Task19 {
         for (int a : array) {
             System.out.print(a + " ");
         }
+
         System.out.println();
         System.out.println("Minimal value with odd index is " + min);
     }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Devices" type="DevicesType"/>
+  <xs:complexType name="ComputerType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]+"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="origin"/>
+      <xs:element name="price">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="3000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Desktop"/>
+            <xs:enumeration value="Laptop"/>
+            <xs:enumeration value="Monoblock"/>
+            <xs:enumeration value="Netbook"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="peripherality">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Peripheral"/>
+            <xs:enumeration value="NonPeripheral"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:short" name="energyConsumption"/>
+      <xs:element type="xs:string" name="port"/>
+      <xs:element type="xs:string" name="cooler"/>
+      <xs:element type="xs:string" name="criticality"/>
+    </xs:sequence>
+    <xs:attribute name="id" use="required" />
+  </xs:complexType>
+  <xs:complexType name="DevicesType">
+    <xs:sequence>
+      <xs:element type="ComputerType" name="Computer" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

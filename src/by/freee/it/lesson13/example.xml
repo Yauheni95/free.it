@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Devices>
+    <Computer id="0">
+        <name>ASUS</name>
+        <origin>China</origin>
+        <price>1320.9</price>
+        <type>Laptop</type>
+        <peripherality>Peripheral</peripherality>
+        <energyConsumption>220</energyConsumption>
+        <port>USB</port>
+        <cooler>YES</cooler>
+        <criticality>Critical</criticality>
+    </Computer>
+    <Computer id="1">
+        <name>ACER</name>
+        <origin>Taiwan</origin>
+        <price>988.0</price>
+        <type>Desktop</type>
+        <peripherality>NonPeripheral</peripherality>
+        <energyConsumption>160</energyConsumption>
+        <port>LPT</port>
+        <cooler>NO</cooler>
+        <criticality>NonCritical</criticality>
+    </Computer>
+</Devices>

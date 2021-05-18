@@ -5,14 +5,12 @@ import java.util.Random;
 public class Task8FromMetodichka {
     public static void main(String[] args) {
         String str = "рубл";
-
         Random rand = new Random();
         int x = rand.nextInt();
         if (x % 100 >= 10 && x % 100 <= 19 || x % 10 == 0 || x % 100 >= -10 && x % 100 <= -19)
             System.out.println(x + " " + str + "ей");
         else {
             switch (x % 10) {
-
                 case 2, -2:
                 case 3, -3:
                 case 4, -4:
@@ -40,7 +38,6 @@ public class Task8FromMetodichka {
 
 
     }
-
 
 }
 

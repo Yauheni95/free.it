@@ -28,9 +28,9 @@ public class Task24 {
         }
 
         //Start
-        int sum=0;
+        int sum = 0;
 
-        for (int i =size-2,j=0;i>1;i--,j++) {
+        for (int i = size - 2, j = 0; i > 1; i--, j++) {
             if (j % 2 == 0 && j != 0)
                 sum += matrix[i][j];
         }

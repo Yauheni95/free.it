@@ -27,25 +27,25 @@ public class Task23 {
             System.out.println();
         }
         //Start
-        long result_1 = 1;
-        long result_2 = 1;
+        long result1 = 1;
+        long result2 = 1;
 
         for (int i = 0, j = 0; i < size; i++, j++) {
-            result_1 *= matrix[i][j];
-            result_2 *= matrix[(size - 1) - i][j];
+            result1 *= matrix[i][j];
+            result2 *= matrix[(size - 1) - i][j];
+
         }
-        System.out.println(result_1);
-        System.out.println(result_2);
-        if (result_1 > result_2)
+        System.out.println(result1);
+        System.out.println(result2);
+        if (result1 > result2)
             System.out.println("the result of multiplying the elements of the main diagonal" +
                     " is greater than the side diagonal");
-        if (result_1 < result_2)
+        if (result1 < result2)
             System.out.println("the result of multiplying the elements of the side diagonal" +
                     " is greater than the main diagonal");
-        if (result_1 == result_2)
+        if (result1 == result2)
             System.out.println("the result of multiplying the elements of the side diagonal" +
                     " and the main diagonal is equal");
-
     }
 }
 

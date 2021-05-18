@@ -21,19 +21,18 @@ public class Task14 {
             array[index] = rand.nextInt(100);
             index++;
         }
-        int min=array[0];
-        index=0;
-        while (index<array.length){
-            if (array[index]%2!=0&&array[index]<min)
-                min=array[index];
+        int min = array[0];
+        index = 0;
+        while (index < array.length) {
+            if (array[index] % 2 != 0 && array[index] < min)
+                min = array[index];
             index++;
         }
-        for (int a:array
-             ) {
-            System.out.print(a+" ");
+        for (int a : array){
+            System.out.print(a + " ");
         }
         System.out.println();
-        System.out.println("minimum odd element is "+min);
+        System.out.println("minimum odd element is " + min);
     }
 }
 
