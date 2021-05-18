@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Devices>
+    <name>ACER</name>
+    <origin>Taiwan</origin>
+    <price>2500</price>
+    <type>Desktop</type>
+    <peripherality>NonPeripheral</peripherality>
+    <energyConsumption>160</energyConsumption>
+    <port>LPT</port>
+    <cooler>NO</cooler>
+    <criticality>NonCritical</criticality>
+</Devices>
